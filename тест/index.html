@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Title</title>
+        <link rel="stylesheet" href="./assets/styles/styles.css" />
+        <script src="./assets/script/data/data.js"></script>
+        <script src="./assets/script/utility/utility.js"></script>
+        <script src="./assets/script/model/model.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <img
+                width="100"
+                height="100"
+                src="./assets/images/logo.png"
+                alt=""
+            />
+            <span class="nav">
+                <a href="#home">HOME </a>
+                <a href="#adopted">ADOPTED</a>
+            </span>
+        </header>
+        <main class="main">
+            <section id="home">
+                <input type="text" id="search" />
+                <select name="select" id="select">
+                    <option value="Choose type">Choose type</option>
+                </select>
+                <div class="homeContainer"></div>
+            </section>
+            <section id="adopted">
+                <div class="adoptedContainer"></div>
+            </section>
+            <section id="donate">
+                <div class="donateContainer">
+                    <h1>
+                        How Much do you want do donate for
+                        <span class="petName"></span>
+                    </h1>
+                    <form action="" id="form">
+                        <input type="text" placeholder="Your Name" id="formName"/>
+                        <input type="text" placeholder="Sum" id="formSum"/>
+                        <input type="submit" value="DONATE" id="submitBtn"/>
+                    </form>
+                    <p>Donations history:</p>
+                    <table id="table">
+                        <thead>
+                            <tr>
+                                <th>date</th>
+                                <th>animal name</th>
+                                <th>donated sum</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody"></tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+        <footer class="footer"></footer>
+        <script src="./assets/script/controller/viewController.js"></script>
+    </body>
+</html>

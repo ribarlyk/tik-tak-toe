@@ -1,0 +1,97 @@
+.homeContainer , .adoptedContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 10px;
+    justify-content: center;
+
+}
+
+
+
+.card {
+    width: 200px;
+    height: 350px;
+    background-color: white;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: 5fr repeat(7, 1fr);
+
+    grid-template-areas:
+        "a a"
+        "b b"
+        "c c"
+        "d d"
+        "e e"
+        "f f"
+        "g g"
+        'x' 'y'
+
+}
+
+.card img {
+    grid-area: a;
+}
+
+.card .name {
+    grid-area: b;
+}
+
+.card .type {
+    grid-area: c;
+}
+
+.card .breed {
+    grid-area: d;
+}
+
+.card .age {
+    grid-area: e;
+}
+
+.card .gender {
+    grid-area: f;
+}
+
+.card .sum , .dates{
+    grid-area: g;
+}
+
+.adoptBtn {
+    grid-area: x;
+}
+
+.donateBtn {
+    grid-area: y;
+}
+
+#search {
+    margin-top: 50px
+}
+
+
+.donateContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+form input {
+    margin: 5px;
+}
+table {
+    border-collapse:separate; 
+    border-spacing: 2em 2em;
+  }
+
+.main {
+    background-color: bisque;
+}

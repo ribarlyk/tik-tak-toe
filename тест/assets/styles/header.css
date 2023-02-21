@@ -1,0 +1,11 @@
+.nav {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+
+}
+
+.nav a {
+    margin-right: 30px;
+    color :black    
+}
